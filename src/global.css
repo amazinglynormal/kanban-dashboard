@@ -4,9 +4,22 @@
   padding: 0;
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+header > p {
+  height: 3rem;
+  background-color: #eed202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
 }
 
 footer {
