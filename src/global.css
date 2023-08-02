@@ -1,3 +1,7 @@
+:root {
+  --off-white: #c5eedb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,10 +26,17 @@ header > p {
   font-size: 1.1rem;
 }
 
+main {
+  min-height: 40rem;
+  background-color: var(--off-white);
+}
+
 footer {
   height: 2rem;
   display: flex;
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #cecece;
+  background-color: var(--off-white);
 }
