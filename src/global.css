@@ -1,51 +1,88 @@
 :root {
-  --off-white: #c5eedb;
+    --off-white: #c5eedb;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 button {
-  border: 1px solid black;
-  background-color: transparent;
+    border: 1px solid black;
+    background-color: transparent;
 }
 
 button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 header > p {
-  height: 3rem;
-  background-color: #eed202;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+    height: 3rem;
+    background-color: #eed202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
 }
 
 main {
-  min-height: 40rem;
-  background-color: var(--off-white);
+    min-height: 40rem;
+    background-color: var(--off-white);
+    display: flex;
+}
+
+.column {
+    background-color: white;
+    border: 1px solid black;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 4rem 4rem;
+}
+
+.title-container {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.add-card-container {
+    border-bottom: 1px solid black;
+    margin: 1rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    background-color: aquamarine;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 1rem 0rem;
 }
 
 footer {
-  height: 2rem;
-  display: flex;
-  padding: 1rem 2rem;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #cecece;
-  background-color: var(--off-white);
+    height: 2rem;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #cecece;
+    background-color: var(--off-white);
 }

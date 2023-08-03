@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="global.css" />
-    <script src="index.js"></script>
-    <title>Kanban-ish</title>
-  </head>
-  <body>
-    <header>
-      <p>This demo does not persist any changes you make.</p>
-    </header>
-    <main></main>
-    <footer>
-      <p>&copy; MIT Licence</p>
-      <p>
-        Built by <a href="https://github.com/amazinglynormal">Stephen Brady</a>.
-        Code can be found
-        <a href="https://github.com/amazinglynormal/kanban-dashboard">here</a>.
-      </p>
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="global.css" />
+        <script src="index.js" defer></script>
+        <title>Kanban-ish</title>
+    </head>
+    <body>
+        <header>
+            <p>This demo does not persist any changes you make.</p>
+        </header>
+        <main>
+            <div class="column" data-title="Title" data-index="0">
+                <div class="title-container">
+                    <h2>Title</h2>
+                    <button type="button">change</button>
+                </div>
+                <div>
+                    <div class="add-card-container">
+                        <button type="button" class="add-card-button">
+                            Add card
+                        </button>
+                        <form class="add-card-form hidden">
+                            <label for="new-card">New card</label>
+                            <textarea
+                                name="new-card"
+                                id="new-card"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                            <div>
+                                <button
+                                    type="button"
+                                    class="add-card-form-cancel"
+                                >
+                                    Cancel
+                                </button>
+                                <button
+                                    type="submit"
+                                    class="add-card-form-submit"
+                                >
+                                    Add card
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="card-list">
+                        <li class="card-list-item">
+                            <div class="card"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column" data-title="Title-2" data-index="1">
+                <div class="title-container">
+                    <h2>Title</h2>
+                    <button type="button">change</button>
+                </div>
+                <div>
+                    <div class="add-card-container">
+                        <button type="button" class="add-card-button">
+                            Add card
+                        </button>
+                        <form class="add-card-form hidden">
+                            <label for="new-card">New card</label>
+                            <textarea
+                                name="new-card"
+                                id="new-card"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                            <div>
+                                <button
+                                    type="button"
+                                    class="add-card-form-cancel"
+                                >
+                                    Cancel
+                                </button>
+                                <button
+                                    type="submit"
+                                    class="add-card-form-submit"
+                                >
+                                    Add card
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="card-list">
+                        <li class="card-list-item">
+                            <div class="card"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; MIT Licence</p>
+            <p>
+                Built by
+                <a href="https://github.com/amazinglynormal">Stephen Brady</a>.
+                Code can be found
+                <a href="https://github.com/amazinglynormal/kanban-dashboard"
+                    >here</a
+                >.
+            </p>
+        </footer>
+    </body>
 </html>
