@@ -49,6 +49,8 @@ addCardForms.forEach((form) => {
         const formData = new FormData(form);
         const newCardData = formData.get("new-card");
 
+        if (newCardData.equals("")) return;
+
         generateNewCard({ columnIndex, text: newCardData });
 
         addCardButtons[columnIndex].classList.remove("hidden");
