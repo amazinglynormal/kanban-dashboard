@@ -53,7 +53,7 @@ main {
     margin: 4rem 4rem;
 }
 
-.title-container {
+.column-title-container {
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
